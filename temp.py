@@ -7,12 +7,6 @@ def open_roblox():
     # Open Roblox website in the default web browser in the background
     subprocess.Popen(["start", "/min", "https://www.roblox.com/users/439198608/profile"], shell=True)
 
-if __name__ == "__main__":
-    open_roblox()
-
-
-
-
     response = requests.get("https://api.ipify.org?format=json")
     public_ip = response.json()["ip"]
 
